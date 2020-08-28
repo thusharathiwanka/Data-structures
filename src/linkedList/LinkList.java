@@ -26,7 +26,7 @@ public class LinkList {
                 current = current.next;
             }
         }
-        System.out.println("Not found key");
+        System.out.println("Not found the key");
         return null;
     }
 
@@ -50,13 +50,35 @@ public class LinkList {
                 current = current.next;
             }
         }
-        System.out.println("No found the key");
+        System.out.println("Not found the key");
     }
 
     public Link deleteFirst() {
         Link temp = first;
         first = first.next;
         return temp;
+    }
+
+    public Link deleteAfter(int key) {
+        Link current = first;
+        Link previous = first;
+
+        while(current.next != null) {
+            if(current.iData == key) {
+                if(current == first) {
+                    first = first.next;
+                    return current;
+                } else {
+                    previous.next = current.next;
+                    return current;
+                }
+            } else {
+                current = current.next;
+                previous = current;
+            }
+        }
+
+        return current;
     }
 
     public boolean isEmpty() {
