@@ -13,6 +13,11 @@ public class LinkedListApp {
         linkList.displayList();
         System.out.println();
 
+        linkList.insertAfter(2, 8);
+
+        linkList.displayList();
+        System.out.println();
+
         while (!linkList.isEmpty()) {
             System.out.println(linkList.deleteFirst().iData + " deleted");
         }
