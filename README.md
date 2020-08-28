@@ -1,4 +1,4 @@
-## Data Sturctures and Algorithms in Java
+## Data Sturctures and Algorithms using Java
   
   ### Data Structures
   * Stack
