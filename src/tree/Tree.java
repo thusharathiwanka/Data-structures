@@ -56,7 +56,7 @@ public class Tree {
         return current;
     }
 
-    public void inOrder(Node localRoot) {
+    private void inOrder(Node localRoot) {
         if(localRoot != null) {
             inOrder(localRoot.leftChild);
             localRoot.displayNode();
@@ -64,19 +64,31 @@ public class Tree {
         }
     }
 
-    public void preOrder(Node localRoot) {
+    public void TraverseInOrder() {
+        inOrder(root);
+    }
+
+    private void preOrder(Node localRoot) {
         if(localRoot != null) {
             localRoot.displayNode();
-            preOrder(localRoot.leftChild);
-            preOrder(localRoot.rightChild);
+            inOrder(localRoot.leftChild);
+            inOrder(localRoot.rightChild);
         }
     }
 
-    public void postOrder(Node localRoot) {
+    public void TraversePreOrder() {
+        preOrder(root);
+    }
+
+    private void postOrder(Node localRoot) {
         if(localRoot != null) {
-            postOrder(localRoot.leftChild);
-            postOrder(localRoot.rightChild);
+            inOrder(localRoot.leftChild);
+            inOrder(localRoot.rightChild);
             localRoot.displayNode();
         }
+    }
+
+    public void TraversePostOrder() {
+        postOrder(root);
     }
 }
