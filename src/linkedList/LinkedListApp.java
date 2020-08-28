@@ -14,7 +14,7 @@ public class LinkedListApp {
         System.out.println();
 
         while (!linkList.isEmpty()) {
-            System.out.println(linkList.deleteFirst().iData);
+            System.out.println(linkList.deleteFirst().iData + " deleted");
         }
     }
 }
