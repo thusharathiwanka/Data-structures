@@ -1,8 +1,8 @@
-Data Sturctures and Algorithms in Java
+### Data Sturctures and Algorithms in Java
 
   * Stack
   * Queue
     * Linear Queue
-    * Cicular Queue
+    * Circular Queue
   * Linked List
   * Tree
