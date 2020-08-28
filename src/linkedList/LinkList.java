@@ -26,7 +26,7 @@ public class LinkList {
                 current = current.next;
             }
         }
-        System.out.println("Not found the key");
+        System.out.println("Key is not found");
         return null;
     }
 
@@ -50,7 +50,7 @@ public class LinkList {
                 current = current.next;
             }
         }
-        System.out.println("Not found the key");
+        System.out.println("Key is not found");
     }
 
     public Link deleteFirst() {
@@ -77,8 +77,8 @@ public class LinkList {
                 previous = current;
             }
         }
-
-        return current;
+        System.out.println("Key is not found");
+        return null;
     }
 
     public boolean isEmpty() {
