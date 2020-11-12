@@ -3,6 +3,6 @@
   * Stack
   * Queue
     * Linear Queue
-    * Circular Queue
+    * Circular Queu
   * Linked List
   * Tree
